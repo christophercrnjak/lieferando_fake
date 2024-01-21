@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeliverChris</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" type="image/x-icon" href="./img/icon.jpg" />
+  <script src="./script.js"></script>
+</head>
+
+<body onload="init()">
+  <header id="header">
+    <h1 class="headline">DeliverChris.de</h1>
+    <h4>Speisekarte</h4>
+    <nav>
+      <div class="a_divs">
+        <a href="#" id="a_flag">
+          <img src="./img/flag_german.png" alt="Deutschland-Flagge" id="flag" />
+        </a>
+      </div>
+      <div class="a_divs">
+        <a href="#" class="burger">
+          <div class="burgerRow"></div>
+          <div class="burgerRow"></div>
+          <div class="burgerRow"></div>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <div id="wrapper" class="wrapper">
+    <main>
+      <section class="__restaurantHeader__">
+        <img src="./img/pizza.jpg" alt="" id="pizza_img" />
+        <section class="page_section">
+          <h1>SAKURA RAMEN</h1>
+          <div class="stars_section">
+            <div class="stars">
+              <img src="./img/star_orange.png" alt="Stern" />
+              <img src="./img/star_orange.png" alt="Stern" />
+              <img src="./img/star_orange.png" alt="Stern" />
+              <img src="./img/star_orange.png" alt="Stern" />
+              <img src="./img/star.svg" alt="Stern" />
+            </div>
+            <div class="underlined">1k Bewertungen</div>
+          </div>
+          <div class="info_box">
+            <img src="./img/bag.svg" alt="Handtasche" class="bag" />
+            Min. 8,00 €
+            <img src="./img/deliverboy.png" alt="bicycle" class="deliverboy" />
+            1,00 €
+          </div>
+        </section>
+      </section>
+  
+      <section class="__menuDiv__" id="__menuDiv__"></section>
+    </main>
+  
+    <aside id="aside">
+      <h2 class="__selfCentered__">Warenkorb</h2>
+    </aside>
+
+  </div>
+
+  <div id="__mobileBasket__" class="__dNone__">
+    <div>Es existieren noch keine Gerichte in deinem Warenkorb!</div>
+    <button onclick="showWholePage()">Schließen</button>
+  </div>
+
+  <div id="__executedOrder__" class="__dNone__">
+    <div>Ihre Bestellung wurde abgeschickt!</div>
+    <button onclick="showWholePage()">Schließen</button>
+  </div>
+  
+</body>
+
+</html>
